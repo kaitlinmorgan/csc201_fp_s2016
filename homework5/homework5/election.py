@@ -106,8 +106,11 @@ def unique_column_values(rows, column_name):
     Returns:
         A set: containing all unique values in column `column_name`
     """
-    #TODO: Implement this function
-    pass
+    unique_list = []
+    for columns in column_name:
+        if columns not in unique_list:
+            unique_list.append(columns)
+    return unique_list
 
 
 def pollster_predictions(poll_rows):
@@ -120,9 +123,7 @@ def pollster_predictions(poll_rows):
     Returns:
         A *PollsterPredictions*: a dictionary from *Pollster* to *StateEdges*
     """
-    #TODO: Implement this function
-    pass
-
+    return poll_rows{state_edges()}
 
 ################################################################################
 # Problem 4: Pollster errors
