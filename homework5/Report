@@ -33,7 +33,15 @@ state data (state_edges_actual) and calculates the poll error.
 For the function pivot_nested_dict two dictionaries are used, one containing
 predictions and the other containing actual state data.  The dictionary variable
 labeled "input_dict" is used for the pollster predictions and the "output_dict"
-is a dictionary containing actual state results.
+is a dictionary containing actual state results.  The function
+average_error_to_weight gives the weight of the poll and bases it on the "error"
+variable which is the average error of weight.  The pollster_to_weight function
+takes the polls, checks their errors, and returns the average weight.  The
+weighted_average function gives an average of items based on their weight.  The
+average_edge function gives an average of the democratic edge based on the
+pollster edges and pollster errors using another weighted average calculator.
+The last function I had to tweak was the predict_state_edges function which
+predicts the democratic edge for states based on current and passed elections.
 
 This program was fairly straightforward although I didn't get many of the results
 I was hoping for when testing and a few errors.  I think what through me off

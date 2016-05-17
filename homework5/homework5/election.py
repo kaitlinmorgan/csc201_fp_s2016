@@ -275,8 +275,7 @@ def predict_state_edges(pollster_predictions, pollster_errors):
     Returns:
         *StateEdges*: predicted *StateEdges* of the current election
     """
-    #TODO: Implement this function
-    pass
+    return average_edge()*pivot_nested_doct
 
 
 ################################################################################
