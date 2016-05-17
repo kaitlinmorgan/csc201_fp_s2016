@@ -1,0 +1,38 @@
+#Kaitlin Morgan
+#Report for Homework 5 (Final Project)
+
+The objectives of this project are to implement functions that take data from
+election polls and predict things about the next election or spit back data
+about previous elections to help find a pattern that may lend itself to the
+prediction of an upcoming election.  Each function sorts a portion of the
+collected data in a specific way and all of them work together in the main
+function to make the election predictions.
+
+The row_to_edge function takes in a row of poll data for a state, comparing
+Democrat and Republican percents and subtracting them to print the Democratic
+edge (the difference between the two).  The state_edges function finds the
+Democratic edge all in one go based on the dictionary list of election results.
+The main variables these two rely on are "Dem" the democratic results and "Rep"
+the republican results.  State lists are also included.  The earlier_date
+functiontests if a first specified date ("date1") occurs before a second date
+("date2") and returns true if yes.  The  most_recent_poll_date function
+tells the most recent row of election results based on a poll and state.  The
+varriable "poll_rows" is a list of the rows of poll data, "pollster" is the poll,
+and "state" is the specific state.  The unique_column_values function returns all
+unique values in a specified column.  The "column_name" variable specifies the
+column to which to apply this function and the "unique_list" list takes all of
+the found unique values and puts them in a new list.  The pollster_predictions
+function predicts data based on row data for the most recent poll for a particular
+state.  The variable "poll_rows" is a lists of data from polls.
+
+This program was fairly straightforward although I didn't get many of the results
+I was hoping for when testing and a few errors.  I think what through me off
+most was the intense amount of reading.  It took me a while to sort through all
+the chit chat portions to find out what the functions were actually supposed to
+do and the tips it offered didn't always feel too helpful.  The whole thing
+was way over explained and as a result left me confused at times and wondering
+why this wasn't just expressed in a few sentences without all the excess and
+virtually unneeded information.  I understand quite a bit of it was necessary,
+but my biggest problem was usually when I didn't understand what the packet
+was trying to get across or the commentary within the actual program itself
+felt unclear.
