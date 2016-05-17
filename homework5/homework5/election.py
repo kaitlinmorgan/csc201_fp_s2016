@@ -143,8 +143,7 @@ def average_error(state_edges_predicted, state_edges_actual):
     Returns:
         float: the average error
     """
-    #TODO: Implement this function
-    pass
+    return float((state_edges_predicted + state_edges_actual)/2)
 
 
 def pollster_errors(pollster_predictions, state_edges_actual):
@@ -160,8 +159,7 @@ def pollster_errors(pollster_predictions, state_edges_actual):
         *PollsterErrors*: a dictionary from *Pollster* to float (The float
         represents the *Pollster*'s average error).
     """
-    #TODO: Implement this function
-    pass
+    return float(averge_error(pollster_predictions))
 
 
 ################################################################################

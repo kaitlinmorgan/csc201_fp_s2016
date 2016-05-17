@@ -23,7 +23,12 @@ unique values in a specified column.  The "column_name" variable specifies the
 column to which to apply this function and the "unique_list" list takes all of
 the found unique values and puts them in a new list.  The pollster_predictions
 function predicts data based on row data for the most recent poll for a particular
-state.  The variable "poll_rows" is a lists of data from polls.
+state.  The variable "poll_rows" is a lists of data from polls.  The avergae_error
+function looks at the predicted democratic edges for states (state_edges_predicted)
+and compares them to the actual calculation for the democratic error
+(state_edges_actual).  It prints the average between the two percents.  The
+pollster_errors function finds the predictions (pollster_predictions) and actual
+state data (state_edges_actual) and calculates the poll error.
 
 This program was fairly straightforward although I didn't get many of the results
 I was hoping for when testing and a few errors.  I think what through me off
