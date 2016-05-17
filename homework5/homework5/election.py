@@ -181,8 +181,12 @@ def pivot_nested_dict(nested_dict):
                 'x': {'a': 1, 'b': 3},
                 'z': {'b': 4} }
     """
-     #TODO: Implement this function
-    pass
+    input_dict = {pollster_predictions()}
+    output_dict = {}
+    for i in input_dict:
+        if i in output_dict:
+            output_dict.add(i)
+    return output_dict
 
 
 ################################################################################
