@@ -242,8 +242,7 @@ def weighted_average(items, weights):
     """
     assert len(items) > 0
     assert len(items) == len(weights)
-    #TODO: Implement this function
-    pass
+    return float((items*weights)/weights)
 
 
 def average_edge(pollster_edges, pollster_errors):
@@ -257,8 +256,7 @@ def average_edge(pollster_edges, pollster_errors):
     Returns:
         float: the weighted average of the *Edge*s, weighted by the errors
     """
-    #TODO: Implement this function
-    pass
+    return float((pollster_edges + pollster_errors)/pollster_errors)
 
 
 ################################################################################
@@ -370,4 +368,4 @@ def main():
 ### Collaboration
 ###
 
-# ... Write your answer here, as a comment (on lines starting with "#").
+# None, used stack overflow for some help.
